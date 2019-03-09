@@ -2,6 +2,27 @@
 
 This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
 
+# Prerequisites
+
+1. Install Truffle v4
+`npm install -g truffle@4`
+2. Install solium linter
+`npm install -g ethlint` 
+and configure settings.json in VSCode editor
+```
+{
+    "files.autoSave": "off",
+    "solidity.compileUsingRemoteVersion" : "v0.4.24+commit.e67f0147",
+    "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+    "solidity.validationDelay": 1500,
+    "solidity.linter": "solium",
+    "solidity.soliumRules": {
+        "quotes": ["error", "double"],
+        "indentation": ["error", 2]
+    }
+}
+```
+
 The DApp User Interface when running should look like...
 
 ![truffle test](images/ftc_product_overview.png)
