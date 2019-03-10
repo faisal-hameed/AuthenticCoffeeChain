@@ -330,7 +330,8 @@ App = {
         App.contracts.SupplyChain.deployed().then(function(instance) {
         var events = instance.allEvents(function(err, log){
           if (!err)
-            $("#ftc-events").append('<li>' + log.event + ' - ' + log.transactionHash + '</li>');
+            console.log(log);
+            $("#ftc-events").append('<li>' + '(Block # : ' + log.blockNumber + ')' + ' : ' + log.event + ' - ' + log.transactionHash + '</li>');
         });
         }).catch(function(err) {
           console.log(err.message);

@@ -226,7 +226,7 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
     items[_upc].itemState = State.ForSale;
     items[_upc].productPrice = _price;
     // Emit the appropriate event
-    emit Sold(_upc);
+    emit ForSale(_upc);
     
   }
 
@@ -260,7 +260,7 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
     // Call modifier to check if upc has passed previous supply chain stage
     sold(_upc)
     // Call modifier to verify caller of this function
-    onlyDistributor()
+    onlyFarmer()
     {
     // Update the appropriate fields
     items[_upc].itemState = State.Shipped;

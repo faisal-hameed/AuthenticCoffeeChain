@@ -1,37 +1,24 @@
-# Supply chain & data auditing
+# CoffeeChain (Authentic Coffee )
 
-This repository containts an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system. Additionally a Seller can mark an item as Shipped, and similarly a Buyer can mark an item as Received.
+This is an Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer. The user story is similar to any commonly used supply chain process. A Seller can add items to the inventory system stored in the blockchain. A Buyer can purchase such items from the inventory system.
 
-# Prerequisites
 
-1. Install Truffle v4
-`npm install -g truffle@4`
-2. Install solium linter
-`npm install -g ethlint` 
-and configure settings.json in VSCode editor
-```
-{
-    "files.autoSave": "off",
-    "solidity.compileUsingRemoteVersion" : "v0.4.24+commit.e67f0147",
-    "solidity.enabledAsYouTypeCompilationErrorCheck": true,
-    "solidity.validationDelay": 1500,
-    "solidity.linter": "solium",
-    "solidity.soliumRules": {
-        "quotes": ["error", "double"],
-        "indentation": ["error", 2]
-    }
-}
-```
+## Libraries Used
 
-The DApp User Interface when running should look like...
+* [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
+* [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
+* [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
 
-![truffle test](images/ftc_product_overview.png)
+## Atchitecture
 
-![truffle test](images/ftc_farm_details.png)
-
-![truffle test](images/ftc_product_details.png)
-
-![truffle test](images/ftc_transaction_history.png)
+### Activity Diagram
+![Activity Diagram](uml/CoffeeChain-activity-diagram.png)
+### Sequence Diagram
+![Sequence Diagram](uml/CoffeeChainSequenceDiagram.png)
+### State Diagram
+![State Diagram](uml/CoffeeChain-State-Diagram.png)
+### Class Diagram
+![Class Diagram](uml/CoffeChain-ClassDiagram.png)
 
 
 ## Getting Started
@@ -40,11 +27,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
-
-```
-Give examples (to be clarified)
-```
+Please make sure you've installed following packages.
+1. Install ganache-cli
+`npm install -g ganache-cli`
+2. Install Truffle v4
+`npm install -g truffle@4`
+3. Enable MetaMask extension in browser
 
 ### Installing
 
@@ -53,13 +41,13 @@ A step by step series of examples that tell you have to get a development env ru
 Clone this repository:
 
 ```
-git clone https://github.com/udacity/nd1309/tree/master/course-5/project-6
+git clone https://github.com/faisal-hameed/AuthenticSupplyChain.git
 ```
 
-Change directory to ```project-6``` folder and install all requisite npm packages (as listed in ```package.json```):
+Change directory to ```coffeechain``` folder and install all requisite npm packages (as listed in ```package.json```):
 
 ```
-cd project-6
+cd coffeechain
 npm install
 ```
 
@@ -111,21 +99,32 @@ In a separate terminal window, launch the DApp:
 npm run dev
 ```
 
-## Built With
 
-* [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
-* [IPFS](https://ipfs.io/) - IPFS is the Distributed Web | A peer-to-peer hypermedia protocol
-to make the web faster, safer, and more open.
-* [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
+# VisualStudio Code setting
+1. Install solium linter
+`npm install -g ethlint` 
+and configure settings.json in VSCode editor
+```
+{
+    "files.autoSave": "off",
+    "solidity.compileUsingRemoteVersion" : "v0.4.24+commit.e67f0147",
+    "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+    "solidity.validationDelay": 1500,
+    "solidity.linter": "solium",
+    "solidity.soliumRules": {
+        "quotes": ["error", "double"],
+        "indentation": ["error", 2]
+    }
+}
+```
 
+# UI
+The DApp User Interface when running should look like...
 
-## Authors
+![truffle test](images/ftc_product_overview.png)
 
-See also the list of [contributors](https://github.com/your/project/contributors.md) who participated in this project.
+![truffle test](images/ftc_farm_details.png)
 
-## Acknowledgments
+![truffle test](images/ftc_product_details.png)
 
-* Solidity
-* Ganache-cli
-* Truffle
-* IPFS
+![truffle test](images/ftc_transaction_history.png)

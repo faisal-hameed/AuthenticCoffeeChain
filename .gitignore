@@ -1,6 +1,4 @@
-project-6/node_modules
-smart_contracts/chaindata
-smart_contracts/db/
-project-6/build/
+coffeechain/node_modules
+coffeechain/build/
 .DS_Store
-project-6/package-lock.json
+coffeechain/package-lock.json
