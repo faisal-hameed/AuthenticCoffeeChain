@@ -155,6 +155,9 @@ Saving artifacts...
 ```
 #### SupplyChain contract address : 0x19aa63c20c611b82184a721563b880cd5f19d1ab
 
+### 2nd Deployment
+https://rinkeby.etherscan.io/address/0xbdb58ecbef001fabe9b041ad1cdf504941d609a3
+
 
 # UI
 The DApp User Interface when running should look like...
