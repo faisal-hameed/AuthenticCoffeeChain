@@ -118,6 +118,44 @@ and configure settings.json in VSCode editor
 }
 ```
 
+## Deployment on Live network
+
+In order to deploy on live test network, execute following command.
+`$ truffle migrate --clean --network rinkeby`
+Result should be:
+```
+Using network 'rinkeby'.
+
+Running migration: 1_initial_migration.js
+  Deploying Migrations...
+  ... 0x98aa204ab089991de6bde404df97c106d14b899cb0e69ead17d599b41fcbc880
+  Migrations: 0x21590c254cc9877512a66b7147e4f1eb1cda94ad
+Saving successful migration to network...
+  ... 0xdc6f7222a01b3b67ab421c3bf7d853257d3abde14aa99d548e6dec72226462ed
+Saving artifacts...
+Running migration: 2_deploy_contracts.js
+  Deploying FarmerRole...
+  ... 0xb337a9b6f09dbfd67cb917e9876be89f511d87c5507dc35563ad16404fd762d2
+  FarmerRole: 0x7cf2c4d107aef230362831db130cff6cd8e044a1
+  Deploying DistributorRole...
+  ... 0xc6b247460c85b2ddaad12db7505b3c390140145fc359f17ad73b53fd16f37ce0
+  DistributorRole: 0x9065748723d0f9d515c7f6c60737d97beb1ce3e0
+  Deploying RetailerRole...
+  ... 0x656cbfcd8446caace4a82def7afcce01e6578d646849541772a2aba181594fda
+  RetailerRole: 0x3253fab4a99e8c29f538dbfab9dc8b69a2a2457d
+  Deploying ConsumerRole...
+  ... 0xa49077260ffdd4270eff288af54d63cff841e5da64d3dfdd2c1547c6b4687e30
+  ConsumerRole: 0xd5129f9432df79de1ecbb346c51b041b8ad07656
+  Deploying SupplyChain...
+  ... 0xfd661882662902734d637920d95abd9e1c1ef8dd60a3bd0bb7112f40b9355181
+  SupplyChain: 0x19aa63c20c611b82184a721563b880cd5f19d1ab
+Saving successful migration to network...
+  ... 0xc2ca448cde31a946c8cc74c1131725d92612f8d48e11c98503895139fa5a9a24
+Saving artifacts...
+```
+#### SupplyChain contract address : 0x19aa63c20c611b82184a721563b880cd5f19d1ab
+
+
 # UI
 The DApp User Interface when running should look like...
 
